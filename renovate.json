@@ -1,0 +1,33 @@
+{
+    "extends": [
+      "config:base",
+      ":semanticCommitsDisabled",
+      ":preserveSemverRanges",
+      ":prNotPending",
+      ":prHourlyLimitNone",
+      ":prConcurrentLimit10",
+      ":automergeMinor",
+      ":automergeDigest",
+      ":automergeBranchPush",
+      ":automergeRequireAllStatusChecks",
+      "group:definitelyTyped",
+      "group:linters"
+    ],
+    "timezone": "Europe/Berlin",
+    "schedule": [
+      "after 10pm",
+      "before 5am"
+    ],
+    "peerDependencies": {
+      "enabled": false
+    },
+    "lockFileMaintenance": {
+      "enabled": true,
+      "automerge": true
+    },
+    "node": {
+      "enabled": true,
+      "supportPolicy": ["lts", "current"]
+    }
+  }
+  
