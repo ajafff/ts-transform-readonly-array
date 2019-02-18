@@ -9,7 +9,6 @@
       ":automergeMinor",
       ":automergeDigest",
       ":automergeBranchPush",
-      ":automergeRequireAllStatusChecks",
       "group:definitelyTyped",
       "group:linters"
     ],
@@ -30,4 +29,3 @@
       "supportPolicy": ["lts", "current"]
     }
   }
-  
